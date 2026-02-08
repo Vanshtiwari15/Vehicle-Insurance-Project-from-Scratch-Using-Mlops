@@ -16,15 +16,15 @@ from src.logger import configure_logger
 from src.exception import MyException
 import sys
 
-try:
-    a = 1+'Z'
-except Exception as e:
-    logger.info(e)
-    raise MyException(e, sys) from e
+# try:
+#     a = 1+'Z'
+# except Exception as e:
+#     logger.info(e)
+#     raise MyException(e, sys) from e
 
 # --------------------------------------------------------------------------------
 
-# from src.pipline.training_pipeline import TrainPipeline
+from src.pipline.training_pipeline import TrainPipeline
 
-# pipline = TrainPipeline()
-# pipline.run_pipeline()
+pipline = TrainPipeline()
+pipline.run_pipeline()
