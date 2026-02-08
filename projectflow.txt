@@ -22,4 +22,4 @@
 
 Vansh_Tiwari --> username
 BNTtZU00JUbfEcDu --> password
-mongodb+srv://Vansh_Tiwari:<db_password>@cluster0.bi8qok0.mongodb.net/?appName=Cluster0 --> Connection string
+mongodb+srv://Vansh_Tiwari:<db_password>@cluster0.bi8qok0.mongodb.net/?appName=Cluster0 --> Connection string/url
