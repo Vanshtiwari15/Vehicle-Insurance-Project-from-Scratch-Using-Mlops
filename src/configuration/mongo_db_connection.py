@@ -2,11 +2,14 @@ import os
 import sys
 import pymongo
 import certifi
+from dotenv import load_dotenv   # ADD THIS
 
 from src.exception import MyException
 from src.logger import configure_logger
 logger = configure_logger()
 from src.constants import DATABASE_NAME, MONGODB_URL_KEY
+
+load_dotenv()  # ADD THIS (must be before os.getenv)
 
 # Load the certificate authority file to avoid timeout errors when connecting to MongoDB
 ca = certifi.where()
